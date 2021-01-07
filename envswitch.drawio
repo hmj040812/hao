@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-07T09:47:36.771Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="vPwF9VAbfWoZYxLp25pu" version="14.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-07T09:48:49.814Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="18Vz0x_nV5pf9Ugagy4n" version="14.0.0" type="github">
   <diagram id="1Ht35DXn-JhuVOMwkHlW" name="Page-1">
     <mxGraphModel dx="1353" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -106,9 +106,6 @@
         </mxCell>
         <mxCell id="daievUbQpzk6-FgNpJxz-20" value="client-uat" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="360" y="390" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="daievUbQpzk6-FgNpJxz-33" value="&lt;h1&gt;说明&lt;/h1&gt;&lt;p&gt;keycloak中添加3个client，分别对应到基础平台DEV，SIT，UAT环境，由各项目组选择使用哪个client，并配置到前端代码中。&lt;/p&gt;&lt;p&gt;示例流程如下：&lt;/p&gt;&lt;p&gt;①：应用前端1配置client-dev，并进行登录操作；&lt;/p&gt;&lt;p&gt;②：keycloak根据应用前端1登录认证时候传递的client_id：client-dev，调用基础平台BTP-DEV环境，进行登录校验；&lt;/p&gt;&lt;p&gt;③：应用前端1完成登录后，调用应用后端1（带请求头：btp_env=DEV），经过网关；&lt;/p&gt;&lt;p&gt;④：网关根据请求头参数，调用基础平台BTP-DEV校验请求token是否有效&lt;/p&gt;&lt;p&gt;⑤：网关校验通过，转发请求到应用后端1&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
-          <mxGeometry x="40" y="490" width="700" height="230" as="geometry" />
         </mxCell>
         <mxCell id="daievUbQpzk6-FgNpJxz-34" value="APP-Service1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="280" y="20" width="120" height="60" as="geometry" />
